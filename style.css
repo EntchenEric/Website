@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #1c0522;
+    
+}
+
+#Logo{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family:  'Poppins', sans-serif;;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a.active,
+header ul li a:hover{
+    background: #fff;
+    color: #2b1055;
+    transition: 0.5s;
+}
+
+header ul li a:active {
+    background-color: #836aac;
+}
+
+
+.sec ul li{
+    list-style-type: none;
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+.sec a{
+    color: #fff;
+}
+
+.schoolname{
+    font-size: 1.2em;
+    color: #fff;
+
+}
+.schooldate{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 999;
+}
+
+#section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+}
+
+#section img#moon{
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%; 
+
+}
+#section img#Stars{
+    height: 100%;
+    width: 100%;
+}
+
+#section img#clouds{
+    height: 100%;
+    width: 100%;
+
+}
+
+/**/
+#section #oben{
+    mix-blend-mode: screen;
+    z-index: 0;
+}
+#section #unten{
+    z-index: -1;
+}
+
+#text{
+   position: absolute; 
+   color: #fff;
+   white-space: nowrap;
+   font-size: 7.5vw;
+   z-index: 9;
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+   transform: translateY(100px);
+}
+
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background-color: #1c0522;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec h3{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.sec div{
+    padding-bottom: 10%;
+}
+
+.sec #school ul{
+    display:list-item;
+    align-items: left;
+    justify-content: left;
+    list-style-type: none;
+
+}
+
+.sec #school li{
+    list-style-type: none;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.sec #school p{
+    width: 100%;
+}
